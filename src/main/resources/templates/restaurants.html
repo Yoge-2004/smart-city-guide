@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Restaurants</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Restaurants</h1>
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Name</th>
+        <th>Cuisine</th>
+        <th>Rating</th>
+        <th>City</th>
+    </tr>
+    <tr th:each="restaurant : ${restaurants}">
+        <td th:text="${restaurant.name}"></td>
+        <td th:text="${restaurant.cuisineType}"></td>
+        <td th:text="${restaurant.rating}"></td>
+        <td th:text="${restaurant.city}"></td>
+    </tr>
+</table>
+</body>
+</html>

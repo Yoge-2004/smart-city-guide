@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hotels</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Hotels</h1>
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Name</th>
+        <th>Stars</th>
+        <th>Rating</th>
+        <th>City</th>
+    </tr>
+    <tr th:each="hotel : ${hotels}">
+        <td th:text="${hotel.name}"></td>
+        <td th:text="${hotel.stars}"></td>
+        <td th:text="${hotel.rating}"></td>
+        <td th:text="${hotel.city}"></td>
+    </tr>
+</table>
+</body>
+</html>
