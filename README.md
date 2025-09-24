@@ -62,7 +62,7 @@ This project provides an interactive platform for exploring city locations, serv
 
 ### Running
 
-- For Java GUI: Locate and run the main class (e.g., `Main.java`).
+- For Java GUI: Locate and run the main class (`SmartCityGuideApplication.java`).
 - For HTML/CSS preview: Open HTML files in your browser.
 
 ---
