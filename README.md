@@ -47,7 +47,7 @@ This project provides an interactive platform for exploring city locations, serv
 
 ### Prerequisites
 
-- Java 8 or later
+- Java 17 or later
 - IDE (IntelliJ, Eclipse, etc.)
 - Web browser (for HTML/CSS)
 
